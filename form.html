@@ -19,6 +19,35 @@
     gtag('config', 'G-RJ5NBB0B9P');
 </script>
 <link rel="stylesheet" href="styles.css">
+<style>
+        /* Your existing CSS styles here */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px; /* Adjust as needed */
+            margin: 0 auto;
+        }
+        label {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        label > span {
+            margin-right: 10px;
+            min-width: 120px; /* Adjust as needed */
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            align-self: flex-end;
+            margin-top: 10px;
+            padding: 8px 20px;
+        }
+    </style>
+
 </head> 
 
 <body>
@@ -37,11 +66,42 @@
     </div>
 </header>
 
+<main>
+    <div class="container">
+        <section>
+            <article>
+                <h2>PC Parts Survey</h2>
+                <p>
+                    Please fill out the form below with information about your PC parts.
+                </p>
+                <form id="partForm" action="submit_part.php" method="post">
+                    <label for="cpu">CPU:</label>
+                    <input type="text" id="cpu" name="cpu" required><br><br>
+
+                    <label for="gpu">GPU:</label>
+                    <input type="text" id="gpu" name="gpu" required><br><br>
+
+                    <label for="ram">RAM:</label>
+                    <input type="text" id="ram" name="ram" required><br><br>
+
+                    <label for="storage">Storage:</label>
+                    <input type="text" id="storage" name="storage" required><br><br>
+
+                    <label for="power_supply">Power Supply:</label>
+                    <input type="text" id="power_supply" name="power_supply" required><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+        </section>
+    </div>
+</main>
+
 <div class="main-content">
     <section>
         <article>
             <p>
-                Please, take this survey and tell us about what PC parts you have, and we will compare them to the rest of our users for you.
+                Or, if you would like, fill out this Google Form below.
             </p>
             <p>
                 <a href="https://forms.gle/Cd2rQHZBLunDDoFf9">Form</a>
