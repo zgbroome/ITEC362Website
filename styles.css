@@ -1,90 +1,90 @@
 /* Resetting default browser styles */
 body, h1, h2, h3, p, ul, ol, li {
-    margin: 0; /* Sets the margin to 0*/
-    padding: 0; /* Sets the padding to 0 */
-    box-sizing: border-box; /* Setting everything to be the same size */
-  }
-  
-  /* Body styles */
-  body {
-    font-family: Arial, sans-serif; /* Sets the font famileis to Arial and sans-serif*/
-    background-color: #f8f8f8; /* Sets the background color to #f8f8f8 */
-    color: #333; /* Sets the font color to #333 */
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #333; /* Sets the background color to #333 */
-    color: #fff; /* Sets the font color to #fff */
-    padding: 20px; /* Sets the padding to 20px */
-    font-size: 45px; /* Sets the font-size to 45px */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Header 1 Styles */
-  h1 {
-    font-size: 32px; /* Sets the font-fize to 32 px */
-    font-weight: bold; /* Bolds the font */
-    color: #f8f8f8; /* Sets the font color to #f8f8f8 */
-    margin-bottom: 20px /* Sets the bottom margin to 20px */
-  }
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
 
-  /* Header 2 Styles */
-  h2 {
-    font-size: 20px; /* Sets the font-size to 20px */
-  }
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-  /* Container for h1 and ul */
-  .container {
-    display: flex; /* Allows text to adapt to screen sizes */
-    justify-content: space-between; /* Puts everything between the flex */
-    align-items: center; /* Aligns everything to center */
-  }
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f8f8f8;
+  margin-bottom: 20px;
+}
 
-  /* ul Styles */
-  nav ul {
-    list-style-type: none; /* Sets the style type to none */
-    padding: 0; /* Sets the padding to 0 */
-  }
-  
-  /* ul li Styles */
-  nav ul li {
-    display: inline-block; /* Sets the list horizontally */
-  }
-  
-  /* List hover styles */
-  nav ul li a {
-    display: block; /* Displays the list in block form */
-    padding: 10px 20px; /* Sets the padding to 10px by 20px */ 
-    text-decoration: none; /* Sets the text-decoration to none */ 
-    color: #fff; /* Sets the font color to #fff */ 
-    background-color: #333; /* Sets the background-color to #333 */
-    border-top-left-radius: 5px; /* Sets the tope left radius to 5px */
-    border-top-right-radius: 5px; /* Sets the tope right radius to 5px */
-  }
-  
-  /* List styles when clicked */
-  nav ul li a.active {
-    background-color: #fff; /* Sets the background color to #fff */
-    color: #333; /* Sets the font color to #333 */
-  }
-  
-    /* List styles when hovered */
-  nav ul li a:hover {
-    background-color: #555; /* Sets the background color to #555 */
-  }
-  
-  /* Main paragraph styles */
-  .main-content {
-    padding: 20px; /* Sets the padding to 20px */
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333; /* Sets the background color to #333 */
-    color: #fff; /* Sets the font color to #fff */
-    padding: 20px 0; /* Sets the padding to 20px by 0 */
-    text-align: center; /* Aligns the text to center */
-  }
+/* Container for header and nav */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 25px; /* Adjust the right padding */
+}
 
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-left: auto; /* Adjust the right margin */
+}
 
+nav ul li {
+  margin-right: 30px;
+}
 
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #555;
+}
+
+nav ul li a:hover {
+  background-color: #777;
+}
+
+/* Main content styles */
+.main-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.main-content article p {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer nav ul {
+  margin-top: 10px;
+}
